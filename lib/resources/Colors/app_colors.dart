@@ -6,7 +6,7 @@ class AppColor {
   static const Color whiteColor = Color(0xffffffff);
 
   static const Color primaryColor = Color(0xff018109);
-  static const Color PrimaryButtonColor = Color.fromARGB(255, 165, 18, 114);
+  static const Color PrimaryButtonColor = Color.fromRGBO(35, 86, 205, 0.518);
   static const Color secondaryButtonColor = Color.fromARGB(255, 55, 55, 235);
 
   static const Color redColor = Color(0xffFC3F5B);
