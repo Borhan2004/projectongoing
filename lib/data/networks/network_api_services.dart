@@ -62,7 +62,8 @@ class NetworkApiServices extends BaseApiServices {
 
       default:
         throw FetchDataException(
-          'Error occured while communicating with server${response.statusCode}',
+          'Error occured while communicating with server ' +
+              response.statusCode.toString(),
         );
     }
   }

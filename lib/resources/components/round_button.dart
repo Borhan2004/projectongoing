@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class RoundButton extends StatelessWidget {
   const RoundButton({
-    Key? key,
+    super.key,
     this.buttonColor = AppColor.PrimaryButtonColor,
     this.textColor = AppColor.primaryTextColor,
     required this.loading,
@@ -11,7 +11,7 @@ class RoundButton extends StatelessWidget {
     this.height = 58,
     this.width = 68,
     required this.onPress,
-  }) : super(key: key);
+  });
 
   final bool loading;
   final String title;

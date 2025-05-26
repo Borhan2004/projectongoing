@@ -1,4 +1,5 @@
 import 'package:create_project_via_mvvm/data/response/routes/routes_name.dart';
+import 'package:create_project_via_mvvm/view/home/homeScreen.dart';
 import 'package:create_project_via_mvvm/view/login/login_view.dart';
 import 'package:create_project_via_mvvm/view/splash_screen.dart';
 import 'package:get/route_manager.dart';
@@ -17,6 +18,13 @@ class AppRoutes {
       page: () => LoginView(),
       transition: Transition.leftToRightWithFade,
       transitionDuration: Duration(milliseconds: 250),
+    ),
+    GetPage(
+      name: RoutesName.HomeScreen,
+      page: () => HomeScreen(),
+      transitionDuration: Duration(milliseconds: 250),
+
+      transition: Transition.leftToRightWithFade,
     ),
   ];
 }
