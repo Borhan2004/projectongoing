@@ -53,6 +53,7 @@ class _LoginViewState extends State<LoginView> {
                     },
                     decoration: InputDecoration(
                       hintText: 'email_hint'.tr,
+                      suffixIcon: Icon(Icons.email),
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -74,6 +75,7 @@ class _LoginViewState extends State<LoginView> {
                     onFieldSubmitted: (value) {},
                     decoration: InputDecoration(
                       hintText: 'password_hint'.tr,
+                      suffixIcon: Icon(Icons.password),
                       border: OutlineInputBorder(),
                     ),
                   ),
