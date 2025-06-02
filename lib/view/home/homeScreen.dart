@@ -32,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Settings',
           ),
         ],
+
         currentIndex: 0,
         onTap: (index) {
           ScaffoldMessenger.of(

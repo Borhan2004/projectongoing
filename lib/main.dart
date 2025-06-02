@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Ongoing',
+      title: 'SplashScreen',
       translations: Languages(),
       locale: Locale('en_US'),
-      fallbackLocale: Locale('en_US'),
+      fallbackLocale: Locale('bn_BD'),
 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),

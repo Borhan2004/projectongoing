@@ -18,7 +18,7 @@ class LoginController extends GetxController {
 
   void loginApi() {
     loading.value = true;
-    Map data = {
+    Map<String, dynamic> data = {
       'email': emailController.value.text,
       'password': passwordController.value.text,
     };
