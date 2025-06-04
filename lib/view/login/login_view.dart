@@ -1,5 +1,6 @@
 import 'package:create_project_via_mvvm/resources/components/round_button.dart';
 import 'package:create_project_via_mvvm/utils/utils.dart';
+import 'package:create_project_via_mvvm/view/home/homeScreen.dart';
 import 'package:create_project_via_mvvm/view_models/controller/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -90,9 +91,15 @@ class _LoginViewState extends State<LoginView> {
                 title: 'login'.tr,
                 loading: loginVM.loading.value,
                 onPress: () {
-                  if (_formKey.currentState?.validate() ?? true) {
-                    loginVM.loginApi();
-                  }
+                  // Example: Navigate to HomeScreen or perform login
+                  // Uncomment and use the following for actual login logic:
+                  // if (_formKey.currentState?.validate() ?? false) {
+                  //   loginVM.loginApi();
+                  // }
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
                 },
               ),
             ),
