@@ -65,7 +65,7 @@ class _LoginViewState extends State<LoginView> {
                     controller: loginVM.passwordController.value,
                     focusNode: loginVM.passwordFocusNode.value,
                     obscureText: true,
-                    obscuringCharacter: '*',
+                    obscuringCharacter: '.',
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         Utils.showSnackBar(context, 'password_hint'.tr);

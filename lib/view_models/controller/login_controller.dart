@@ -26,7 +26,7 @@ class LoginController extends GetxController {
         .loginApi(data)
         .then((value) {
           loading.value = false;
-          if (value['error'] == 'user not found') {
+          if (value['error'] == 'user error') {
             Utils.showSnackBar(Get.context!, value['error']);
           } else {
             userPreferences

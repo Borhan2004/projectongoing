@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Center(
         child: Text(
-          'Welcome to the Home Screen',
+          'Welcome to the Home screen',
           style: TextStyle(fontSize: 24, color: Colors.black54),
         ),
       ),
